@@ -1,0 +1,136 @@
+.hero {
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.search-bar-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.search-bar-container input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: var(--radius-lg);
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cuisine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.cuisine-card {
+  aspect-ratio: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.reco-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.reco-card {
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.reco-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.reco-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+}
+
+.reco-info {
+    padding: 1.5rem;
+}
+
+.reco-info h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.reco-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reco-meta .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 700;
+    color: #ffb400;
+}
+
+.reco-address {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}

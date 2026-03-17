@@ -1,0 +1,191 @@
+.details-page {
+    padding: 2rem 0;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.details-main-info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.review-count {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.cuisine-type {
+    color: var(--primary);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn-primary-large {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-lg);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: var(--shadow-md);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.reviews-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.review-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.review-user h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.review-user span {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.review-stars {
+    margin-bottom: 0.8rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 100px;
+}
+
+.contact-card h3 {
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.info-item a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.hours-list p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 992px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        position: static;
+    }
+}
+
+.mini-map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+}
+
+.details-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn-secondary {
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: white;
+}
