@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.15.1",
-    "lucide-react": "^0.577.0",
+    "lucide-react": "0.468.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.1"
