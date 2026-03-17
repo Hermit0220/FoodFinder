@@ -29,7 +29,7 @@ const Search = () => {
         
         let results = [];
         if (searchQuery || selectedCuisine) {
-            console.log('Using searchByText for:', searchQuery || selectedCuisine);
+
             const { places } = await Place.searchByText({
                 textQuery: `${searchQuery || selectedCuisine} restaurant`,
                 locationBias: { center: userLocation, radius: Number(distanceRadius) },
@@ -38,7 +38,7 @@ const Search = () => {
             });
             results = places;
         } else {
-            console.log('Using searchNearby');
+
             const { places } = await Place.searchNearby({
                 fields: ["displayName", "location", "rating", "userRatingCount", "priceLevel", "formattedAddress", "id", "photos", "types"],
                 locationRestriction: {
@@ -51,7 +51,7 @@ const Search = () => {
             results = places;
         }
 
-        console.log(`Found ${results.length} results via New API`);
+
 
         // Map results to compatible format
         const mappedResults = results.map(p => ({

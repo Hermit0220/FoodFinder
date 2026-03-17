@@ -140,7 +140,7 @@ const MapContainer = () => {
   useEffect(() => {
     if (!google || !map) return;
 
-    console.log(`MapContainer: Processing ${restaurants.length} restaurants for markers`);
+
 
     // Clear old markers
     markersRef.current.forEach(marker => marker.setMap(null));
@@ -178,7 +178,7 @@ const MapContainer = () => {
 
             markersRef.current.push(marker);
         });
-        console.log(`MapContainer: Successfully added ${markersRef.current.length} markers`);
+
     }
   }, [google, map, restaurants]);
 

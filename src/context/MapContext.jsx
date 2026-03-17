@@ -20,10 +20,10 @@ export const MapProvider = ({ children }) => {
       libraries: ['places', 'geometry']
     });
 
-    console.log('API Key:', import.meta.env.VITE_GOOGLE_MAPS_API_KEY ? 'Present' : 'Missing');
+
 
     googleLoader.load().then((g) => {
-      console.log('Google Maps API loaded successfully via legacy Loader');
+
       setGoogle(g);
     }).catch(err => {
       console.error('Failed to load Google Maps API:', err);
